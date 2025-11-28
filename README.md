@@ -4,9 +4,12 @@
 
 🧱 Estrutura e Componentes Chave A aplicação é dividida em componentes reutilizáveis, seguindo a filosofia do React, para gerenciar diferentes aspectos da experiência do usuário:
 
-Estrutura de Layout: Navegação: A barra de navegação principal, responsável pelo roteamento para sessões como Home, Explorar e Minha Lista. Cabelho: Apresenta a identidade visual do site e integra o componente de busca. Rodape: Contém informações finais e links de navegação secundários. Exibição e Interação de Dados: ListasFilmes: O contêiner que recebe uma lista de filmes e os renderiza utilizando o componente CardFilme. CardFilme: A representação individual de um filme. Exibe a capacidade, o título, a duração, as categorias, a faixa etária e inclui botões para Favoritar e links para a página de detalhes.
+Estrutura de Layout: 
 
-Funcionalidades de busca e filtragem:
+> Navegação: 
+A barra de navegação principal, responsável pelo roteamento para sessões como Home, Explorar e Minha Lista. Cabelho: Apresenta a identidade visual do site e integra o componente de busca. Rodape: Contém informações finais e links de navegação secundários. Exibição e Interação de Dados: ListasFilmes: O contêiner que recebe uma lista de filmes e os renderiza utilizando o componente CardFilme. CardFilme: A representação individual de um filme. Exibe a capacidade, o título, a duração, as categorias, a faixa etária e inclui botões para Favoritar e links para a página de detalhes.
+
+>Funcionalidades de busca e filtragem:
 
 \Pesquisa: Um formulário controlado que captura o termo digitado e dispara a função de busca no sistema.
 
@@ -16,7 +19,7 @@ Funcionalidades de busca e filtragem:
 
 💡 Tecnologia e Funcionalidades A aplicação utiliza hooks fundamentais do React (useState, useEffect, useLocation) para gerenciar o estado da lista de filmes, os itens favoritos e o estado ativo da navegação.
 
-O resultado é uma experiência de usuário intuitiva e eficiente, onde os usuários podem:
+> O resultado é uma experiência de usuário intuitiva e eficiente, onde os usuários podem:
 Explorar Filmes: Visualize filmes em cartões ricos em detalhes.
 Buscar: Encontrar títulos rapidamente usando o componente Pesquisa.
 Filtrar: Refina a exibição por diferentes categorias com o componente Filtro.
