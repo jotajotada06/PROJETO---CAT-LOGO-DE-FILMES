@@ -1,71 +1,26 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎬 Catálogo de Filmes: Visão Geral do Projeto Nosso site é um Catálogo de Filmes moderno, desenvolvido com React + TypeScript e construído com Vite, o que garante uma aplicação de alto desempenho e carregamento rápido. O projeto é estruturado de forma modular, com 8 componentes principais que organizam a interface e a lógica de interação.
 
-Currently, two official plugins are available:
+🧱 Estrutura e Componentes Chave A aplicação é dividida em componentes reutilizáveis, seguindo a filosofia do React, para gerenciar diferentes aspectos da experiência do usuário:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Estrutura de Layout: Navegação: A barra de navegação principal, responsável pelo roteamento para sessões como Home, Explorar e Minha Lista. Cabelho: Apresenta a identidade visual do site e integra o componente de busca. Rodape: Contém informações finais e links de navegação secundários. Exibição e Interação de Dados: ListasFilmes: O contêiner que recebe uma lista de filmes e os renderiza utilizando o componente CardFilme. CardFilme: A representação individual de um filme. Exibe a capacidade, o título, a duração, as categorias, a faixa etária e inclui botões para Favoritar e links para a página de detalhes.
 
-## React Compiler
+Funcionalidades de busca e filtragem:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+\Pesquisa: Um formulário controlado que captura o termo digitado e dispara a função de busca no sistema.
 
-## Expanding the ESLint configuration
+\Filtro: Permite ao usuário selecionar categorias para refinar a lista de filmes exibidos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+\Avaliacao: Um componente visual que traduz a nota numérica do filme em um sistema de estrelas (cheias, meias e vazias).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+💡 Tecnologia e Funcionalidades A aplicação utiliza hooks fundamentais do React (useState, useEffect, useLocation) para gerenciar o estado da lista de filmes, os itens favoritos e o estado ativo da navegação.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
+O resultado é uma experiência de usuário intuitiva e eficiente, onde os usuários podem:
+Explorar Filmes: Visualize filmes em cartões ricos em detalhes.
+Buscar: Encontrar títulos rapidamente usando o componente Pesquisa.
+Filtrar: Refina a exibição por diferentes categorias com o componente Filtro.
+Gerenciar Favoritos: Adicionar ou remover filmes de sua lista pessoal diretamente do CardFilme.
       // other options...
     },
   },
