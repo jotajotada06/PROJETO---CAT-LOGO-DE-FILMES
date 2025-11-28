@@ -5,26 +5,23 @@ Nosso site é um Catálogo de Filmes moderno, desenvolvido com React + TypeScrip
 A aplicação é dividida em componentes reutilizáveis, seguindo a filosofia do React, para gerenciar diferentes aspectos da experiência do usuário:
 
 Estrutura de Layout:
-
 Navegacao: A barra de navegação principal, responsável pelo roteamento para sessões como Home, Explorar, e Minha Lista.
-
 Cabecalho: Apresenta a identidade visual do site e integra o componente de busca.
-
 Rodape: Contém informações finais e links de navegação secundários.
-
 Exibição e Interação de Dados:
-
 ListasFilmes: O contêiner que recebe uma lista de filmes e os renderiza utilizando o componente CardFilme.
-
 CardFilme: A representação individual de um filme. Exibe a capa, o título, a duração, as categorias, a faixa etária e inclui botões para Favoritar e links para a página de detalhes.
+
 
 Funcionalidades de Busca e Filtragem:
 
-Pesquisa: Um formulário controlado que captura o termo digitado e dispara a função de busca no sistema.
+\Pesquisa: Um formulário controlado que captura o termo digitado e dispara a função de busca no sistema.
 
-Filtro: Permite ao usuário selecionar categorias para refinar a lista de filmes exibida.
+\Filtro: Permite ao usuário selecionar categorias para refinar a lista de filmes exibida.
 
-Avaliacao: Um componente visual que traduz a nota numérica do filme em um sistema de estrelas (cheias, meias e vazias).
+\Avaliacao: Um componente visual que traduz a nota numérica do filme em um sistema de estrelas (cheias, meias e vazias).
+
+
 
 💡 Tecnologia e Funcionalidades
 A aplicação utiliza hooks fundamentais do React (useState, useEffect, useLocation) para gerenciar o estado da lista de filmes, os itens favoritos e o estado ativo da navegação.
